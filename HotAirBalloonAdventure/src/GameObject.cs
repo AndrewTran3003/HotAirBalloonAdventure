@@ -13,7 +13,7 @@ namespace HotAirBalloonAdventure.src
         private int _score;
         public abstract void Draw();
         public abstract void Move();
-        public abstract void Interact();
+        public abstract void Interact(GameObject gb);
         public GameObject(Point2D pt, int Score)
         {
             _location = pt;
