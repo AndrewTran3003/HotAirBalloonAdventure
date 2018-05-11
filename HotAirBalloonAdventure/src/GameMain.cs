@@ -11,7 +11,7 @@ namespace HotAirBalloonAdventure.src
     {
         static void Main()
         {
-            SwinGame.OpenGraphicsWindow("HotAirBalloonAdventure", 1000, 700);
+            SwinGame.OpenGraphicsWindow("HotAirBalloonAdventure", 1000, 600);
             GameController game1 = new GameController();
             game1.LoadResource();
             while (SwinGame.WindowCloseRequested() == false)

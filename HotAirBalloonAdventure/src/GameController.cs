@@ -10,6 +10,7 @@ namespace HotAirBalloonAdventure.src
     class GameController
     {
         private Player _player;
+
         public GameController()
         {
             Point2D playerLocation = new Point2D();
@@ -19,6 +20,8 @@ namespace HotAirBalloonAdventure.src
         }
         public void LoadResource()
         {
+            SwinGame.LoadBitmapNamed("Wallpaper", "wallpaper.png");
+            SwinGame.DrawBitmap("Wallpaper",0,0);
             _player.Draw();
             SwinGame.RefreshScreen();
         }

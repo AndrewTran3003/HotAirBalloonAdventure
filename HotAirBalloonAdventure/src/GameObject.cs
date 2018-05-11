@@ -41,7 +41,7 @@ namespace HotAirBalloonAdventure.src
                 _location = value;
             }
         }
-        public abstract bool IsAt(Point2D pt);
+     
 
     }
 }

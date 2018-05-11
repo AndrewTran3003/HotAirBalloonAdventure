@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using SwinGameSDK;
 
 namespace HotAirBalloonAdventure.src
@@ -16,6 +17,10 @@ namespace HotAirBalloonAdventure.src
             _lifePoint = 3;
             _shield = 0;
         }
+        public Bitmap PlayerBitmap()
+        {
+            return SwinGame.BitmapNamed("Player");
+        }
         public override void Draw()
         {
             
@@ -26,14 +31,15 @@ namespace HotAirBalloonAdventure.src
         public override void Move()
         {
             Location = SwinGame.MousePosition();
+            Thread.Sleep(20);
         }
         public override void Interact()
         {
             
         }
-        public override bool IsAt(Point2D pt)
+        public  bool IsAt(Point2D pt)
         {
-            return SwinGame.PointInRect(pt,Location.X,Location.Y,111,150);
+            return SwinGame.BitmapPointCollision(PlayerBitmap(), Location.X, Location.Y, pt);
         }
         public int LifePoint
         {
@@ -44,6 +50,17 @@ namespace HotAirBalloonAdventure.src
             set
             {
                 _lifePoint = value;
+            }
+        }
+        public int Shield
+        {
+            get
+            {
+                return _shield;
+            }
+            set
+            {
+                _shield = value;
             }
         }
 
