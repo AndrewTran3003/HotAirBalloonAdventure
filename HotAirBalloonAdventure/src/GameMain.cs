@@ -13,13 +13,13 @@ namespace HotAirBalloonAdventure.src
         {
             SwinGame.OpenGraphicsWindow("HotAirBalloonAdventure", 1000, 600);
             GameController game1 = new GameController();
-            game1.LoadResource();
+           
+
             while (SwinGame.WindowCloseRequested() == false)
             {
+                
                 SwinGame.ProcessEvents();
                 SwinGame.ClearScreen(Color.Black);
-              
-
                 game1.LoadResource();
                 game1.ProcessMovement();
                 SwinGame.RefreshScreen(60);

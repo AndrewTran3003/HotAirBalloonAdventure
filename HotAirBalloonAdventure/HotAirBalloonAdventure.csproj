@@ -50,6 +50,7 @@
   <ItemGroup />
   <ItemGroup>
     <Compile Include="src\BadThing.cs" />
+    <Compile Include="src\Bomb.cs" />
     <Compile Include="src\GameController.cs" />
     <Compile Include="src\GameMain.cs" />
     <Compile Include="src\GameObject.cs" />

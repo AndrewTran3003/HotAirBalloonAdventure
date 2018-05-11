@@ -31,9 +31,8 @@ namespace HotAirBalloonAdventure.src
         public override void Move()
         {
             Location = SwinGame.MousePosition();
-            Thread.Sleep(20);
         }
-        public override void Interact()
+        public override void Interact(GameObject gb)
         {
             
         }
