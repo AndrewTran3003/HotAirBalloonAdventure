@@ -20,8 +20,12 @@ namespace HotAirBalloonAdventure.src
                 
                 SwinGame.ProcessEvents();
                 SwinGame.ClearScreen(Color.Black);
+                game1.HandleUserInput();
                 game1.LoadResource();
                 game1.ProcessMovement();
+                game1.CheckCollision();
+                game1.DeleteThing();
+              
                 SwinGame.RefreshScreen(60);
 
             }
