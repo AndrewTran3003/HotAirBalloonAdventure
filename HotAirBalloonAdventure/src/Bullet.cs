@@ -28,7 +28,7 @@ namespace HotAirBalloonAdventure.src
         }
         public override void Interact(GameObject gb)
         {
-            if (IsAt(gb.Location))
+            if (IsAt(gb))
             {
                 if (gb.GetType() == typeof(Bomb))
                 {
@@ -38,9 +38,9 @@ namespace HotAirBalloonAdventure.src
             }
            
         }
-        public bool IsAt(Point2D pt)
+        public bool IsAt(GameObject gb)
         {
-            return SwinGame.BitmapPointCollision(ObjectBitmap(), LocationX, LocationY, pt);
+            return SwinGame.BitmapCollision(gb.ObjectBitmap(), gb.Location ,  ObjectBitmap(), Location);
         }
     }
 }
