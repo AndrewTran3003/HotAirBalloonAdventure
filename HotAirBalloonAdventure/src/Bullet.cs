@@ -13,7 +13,7 @@ namespace HotAirBalloonAdventure.src
            
         }
 
-        public Bitmap BulletBitmap()
+        public override Bitmap ObjectBitmap()
         {
             return SwinGame.BitmapNamed("Bullet");
         }
@@ -40,7 +40,7 @@ namespace HotAirBalloonAdventure.src
         }
         public bool IsAt(Point2D pt)
         {
-            return SwinGame.BitmapPointCollision(BulletBitmap(), LocationX, LocationY, pt);
+            return SwinGame.BitmapPointCollision(ObjectBitmap(), LocationX, LocationY, pt);
         }
     }
 }

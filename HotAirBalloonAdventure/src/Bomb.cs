@@ -13,7 +13,10 @@ namespace HotAirBalloonAdventure.src
         {
 
         }
-
+        public override Bitmap ObjectBitmap()
+        {
+            return SwinGame.BitmapNamed("Bomb");
+        }
         public override void Draw()
         {
             if(Size == 1)
