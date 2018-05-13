@@ -12,10 +12,12 @@ namespace HotAirBalloonAdventure.src
     {
         private int _lifePoint;
         private int _shield;
+        private List<Bullet> _bullet;
         public Player(Point2D pt) : base(pt,0)
         {
             _lifePoint = 3;
             _shield = 0;
+            _bullet = new List<Bullet>();
         }
         public Bitmap PlayerBitmap()
         {
@@ -25,12 +27,15 @@ namespace HotAirBalloonAdventure.src
         {
             
             SwinGame.LoadBitmapNamed("Player","hot-air-balloon.png");
-            SwinGame.DrawBitmap("Player",Location.X,Location.Y);
+            SwinGame.DrawBitmap("Player",LocationX,LocationY);
+            Font newFont = SwinGame.LoadFont("arial.ttf",80);
+            SwinGame.DrawText(_lifePoint.ToString(), Color.White,newFont, LocationX+25, LocationY);
 
         }
         public override void Move()
         {
-            Location = SwinGame.MousePosition();
+            LocationX = SwinGame.MouseX();
+            LocationY = SwinGame.MouseY();
         }
         public override void Interact(GameObject gb)
         {
@@ -38,7 +43,7 @@ namespace HotAirBalloonAdventure.src
         }
         public  bool IsAt(Point2D pt)
         {
-            return SwinGame.BitmapPointCollision(PlayerBitmap(), Location.X, Location.Y, pt);
+            return SwinGame.BitmapPointCollision(PlayerBitmap(), LocationX, LocationY, pt);
         }
         public int LifePoint
         {
@@ -60,6 +65,17 @@ namespace HotAirBalloonAdventure.src
             set
             {
                 _shield = value;
+            }
+        }
+        public List<Bullet> Bullet
+        {
+            get
+            {
+                return _bullet;
+            }
+            set
+            {
+                _bullet = value;
             }
         }
 

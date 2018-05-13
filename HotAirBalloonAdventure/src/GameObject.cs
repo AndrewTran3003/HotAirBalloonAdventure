@@ -11,6 +11,7 @@ namespace HotAirBalloonAdventure.src
     {
         private Point2D _location;
         private int _score;
+        private bool _isDestroyed;
         public abstract void Draw();
         public abstract void Move();
         public abstract void Interact(GameObject gb);
@@ -18,6 +19,7 @@ namespace HotAirBalloonAdventure.src
         {
             _location = pt;
             _score = Score;
+            _isDestroyed = false;
         }
         public int Score
         {
@@ -28,6 +30,28 @@ namespace HotAirBalloonAdventure.src
             set
             {
                 _score = value;
+            }
+        }
+        public float LocationX
+        {
+            get
+            {
+                return _location.X;
+            }
+            set
+            {
+                _location.X = value;
+            }
+        }
+        public float LocationY
+        {
+            get
+            {
+                return _location.Y;
+            }
+            set
+            {
+                _location.Y = value;
             }
         }
         public Point2D Location
@@ -41,7 +65,18 @@ namespace HotAirBalloonAdventure.src
                 _location = value;
             }
         }
-     
+        public bool IsDestroyed
+        {
+            get
+            {
+                return _isDestroyed;
+            }
+            set
+            {
+                _isDestroyed = value;
+            }
+        }
+
 
     }
 }

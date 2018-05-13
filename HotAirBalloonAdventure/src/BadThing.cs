@@ -16,7 +16,7 @@ namespace HotAirBalloonAdventure.src
             _size = Size;
         }
         
-        public int SetSize
+        public int Size
         {
             get
             {
@@ -29,15 +29,14 @@ namespace HotAirBalloonAdventure.src
         }
      
         public void Move(Player p)
-        {
-            Point2D temp = new Point2D();
-            float a = p.Location.X - Location.X;
-            float b = p.Location.Y - Location.Y;
+        { 
+            float a = p.LocationX - LocationX;
+            float b = p.LocationY - LocationY;
             float Xspeed = a / (float)Math.Sqrt((float)Math.Pow(a,2) + (float)Math.Pow(b,2));
             float Yspeed = b / (float)Math.Sqrt((float)Math.Pow(a, 2) + (float)Math.Pow(b, 2));
-            temp.X = Location.X + Xspeed;
-            temp.Y = Location.Y + Yspeed;
-            Location = temp;
+            LocationX = LocationX + Xspeed;
+            LocationY = LocationY + Yspeed;
+          
         }
       
     }

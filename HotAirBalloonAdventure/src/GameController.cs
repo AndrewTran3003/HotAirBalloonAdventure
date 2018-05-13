@@ -41,6 +41,10 @@ namespace HotAirBalloonAdventure.src
                 bt.Draw();
             }
             _player.Draw();
+            foreach(Bullet b in _player.Bullet)
+            {
+                b.Draw();
+            }
             SwinGame.RefreshScreen();
         }
         public void ProcessMovement()
@@ -50,6 +54,34 @@ namespace HotAirBalloonAdventure.src
             {
                 bt.Move(_player);
             }
+            foreach (Bullet b in _player.Bullet)
+            {
+                b.Move();
+            }
+        }
+        public void DeleteThing()
+        {
+            List<BadThing> _newBadThing = new List<BadThing>();
+            foreach (BadThing bt in _badThing)
+            {
+                if (bt.IsDestroyed == false)
+                {
+                    _newBadThing.Add(bt);
+                }
+            }
+
+            List<Bullet> _newBullet = new List<Bullet>();
+            foreach (Bullet b in _player.Bullet)
+            {
+                if (b.IsDestroyed == false)
+                {
+                    _newBullet.Add(b);
+                }
+            }
+            _badThing = _newBadThing;
+            _player.Bullet = _newBullet;
+
+
         }
         public void AddBadThing(BadThing bt)
         {
@@ -59,20 +91,44 @@ namespace HotAirBalloonAdventure.src
         {
             _badThing.Remove(bt);
         }
+        public void CheckCollision()
+        {
+            foreach(Bullet b in _player.Bullet)
+            {
+                foreach (Bomb bomb in _badThing)
+                {
+                    b.Interact(bomb);
+                }
+            }
+        }
+
 
         public void CreateBadThing()
         {
             Random r = new Random();
-            int x = r.Next(5, 10);
-            for(int i = 0; i < 10; i++)
+            int x = r.Next(3, 7);
+            int y;
+            Random r2 = new Random();
+            Point2D p1 = new Point2D();
+            for (int i = 0; i < x; i++)
             {
-                Random r2 = new Random();
-                Point2D p1 = new Point2D();
-                p1.X = r2.Next(1,800);
-                p1.Y = r2.Next(1, 700);     
-                _badThing.Add(new Bomb(p1, -300, 1));
+                y = r.Next(1, 5);
+                p1.X = r2.Next(1,1100);
+                p1.Y = r2.Next(1, 800);     
+                _badThing.Add(new Bomb(p1, -300, y));
             }
 
+        }
+        public void HandleUserInput()
+        {
+            if (SwinGame.KeyTyped(KeyCode.SpaceKey))
+            {
+                _player.Bullet.Add(new Bullet(Player.Location,-30));
+            }
+        }
+        public void FreeResource()
+        {
+            
         }
     }
 }

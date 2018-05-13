@@ -17,6 +17,6 @@ namespace HotAirBalloonAdventure.src
         {
             
         }
-        public abstract bool IsAt(Point2D pt);
+        
     }
 }

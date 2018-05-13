@@ -16,8 +16,16 @@ namespace HotAirBalloonAdventure.src
 
         public override void Draw()
         {
-            SwinGame.LoadBitmapNamed("Bomb", "bomb.png");
-            SwinGame.DrawBitmap("Bomb", Location.X, Location.Y);
+            if(Size == 1)
+            {
+                SwinGame.LoadBitmapNamed("Bomb", "bomb.png");
+                SwinGame.DrawBitmap("Bomb", LocationX, LocationY);
+            }
+            else
+            {
+                SwinGame.LoadBitmapNamed("Bomb2", "bomb2.jpg");
+                SwinGame.DrawBitmap("Bomb2", LocationX, LocationY);
+            }
         }
         public override void Move()
         {
