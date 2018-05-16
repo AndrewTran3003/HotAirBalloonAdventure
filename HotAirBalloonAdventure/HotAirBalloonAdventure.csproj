@@ -36,6 +36,7 @@
     <PrepareForRunDependsOn>$(PrepareForRunDependsOn);CopyLibsToOut</PrepareForRunDependsOn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Activities.Build" />
     <Reference Include="SwinGame">
       <HintPath>lib\SwinGame.dll</HintPath>
     </Reference>
@@ -47,11 +48,14 @@
     </None>
     <WinLibs Include="lib\win32\*.dll" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="src\BadThing.cs" />
     <Compile Include="src\Bomb.cs" />
     <Compile Include="src\Bullet.cs" />
+    <Compile Include="src\Apple.cs" />
     <Compile Include="src\GameController.cs" />
     <Compile Include="src\GameMain.cs" />
     <Compile Include="src\GameObject.cs" />

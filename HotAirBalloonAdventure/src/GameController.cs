@@ -11,15 +11,18 @@ namespace HotAirBalloonAdventure.src
     {
         private Player _player;
         private List<BadThing> _badThing;
+        private List<GoodThing> _goodThing;
         public GameController()
         {
             _badThing = new List<BadThing>();
+            _goodThing = new List<GoodThing>();
             Point2D pt1 = new Point2D();
             pt1.X = 400;
             pt1.Y = 300;
             Player p1 = new Player(pt1);
             Player = p1;
             CreateBadThing();
+            CreateGoodThing();
         }
         public Player Player
         {
@@ -41,9 +44,17 @@ namespace HotAirBalloonAdventure.src
                 bt.Draw();
             }
             _player.Draw();
-            foreach(Bullet b in _player.Bullet)
+            if(_player.Bullet.Count > 0)
             {
-                b.Draw();
+                foreach (Bullet b in _player.Bullet)
+                {
+                    b.Draw();
+                }
+            }
+           
+            foreach (GoodThing gt in _goodThing)
+            {
+                gt.Draw();
             }
             SwinGame.RefreshScreen();
         }
@@ -54,9 +65,21 @@ namespace HotAirBalloonAdventure.src
             {
                 bt.Move(_player);
             }
+
+            if(_player.Bullet.Count > 0)
+            {
+                foreach (Bullet b in _player.Bullet)
+                {
+                    b.Draw();
+                }
+            }
             foreach (Bullet b in _player.Bullet)
             {
                 b.Move();
+            }
+            foreach (GoodThing gt in _goodThing)
+            {
+                gt.Move();
             }
         }
         public void DeleteThing()
@@ -73,24 +96,30 @@ namespace HotAirBalloonAdventure.src
             List<Bullet> _newBullet = new List<Bullet>();
             foreach (Bullet b in _player.Bullet)
             {
-                if (b.IsDestroyed == false)
+                if (b.IsDestroyed == false && b.LocationX <= 1000)
                 {
                     _newBullet.Add(b);
                 }
+                
             }
+
+            List<GoodThing> _newGoodThing = new List<GoodThing>();
+            foreach (GoodThing g in _goodThing)
+            {
+                if (g.IsDestroyed == false && g.LocationX <= 1000)
+                {
+                    _newGoodThing.Add(g);
+                }
+
+            }
+
             _badThing = _newBadThing;
             _player.Bullet = _newBullet;
+            _goodThing = _newGoodThing;
+           
 
-
         }
-        public void AddBadThing(BadThing bt)
-        {
-            _badThing.Add(bt);
-        }
-        public void RemoveBadThing(BadThing bt)
-        {
-            _badThing.Remove(bt);
-        }
+    
         public void CheckCollision()
         {
             foreach(Bullet b in _player.Bullet)
@@ -105,25 +134,46 @@ namespace HotAirBalloonAdventure.src
 
         public void CreateBadThing()
         {
-            Random r = new Random();
-            int x = r.Next(3, 7);
-            int y;
-            Random r2 = new Random();
-            Point2D p1 = new Point2D();
-            for (int i = 0; i < x; i++)
+            if (_badThing.Count <= 2)
             {
-                y = r.Next(1, 5);
-                p1.X = r2.Next(1,1100);
-                p1.Y = r2.Next(1, 800);     
-                _badThing.Add(new Bomb(p1, -300, y));
+                Random r = new Random();
+                int x = r.Next(3, 7);
+                int y;
+                Random r2 = new Random();
+                Point2D p1 = new Point2D();
+                for (int i = 0; i < x; i++)
+                {
+                    y = r.Next(1, 5);
+                    p1.X = r2.Next(-100, 1500);
+                    p1.Y = r2.Next(-100, 1500);
+                    _badThing.Add(new Bomb(p1, -300, y));
+                }
             }
+            
 
+        }
+        public void CreateGoodThing()
+        {
+            if (_goodThing.Count <= 6)
+            {
+                Random r = new Random();
+                int x = r.Next(3, 7);
+                int y;
+                Random r2 = new Random();
+                Point2D p1 = new Point2D();
+                for (int i = 0; i < x; i++)
+                {
+                    p1.X = r2.Next(-100, -50);
+                    p1.Y = r2.Next(100, 500);
+                    _goodThing.Add(new Apple(p1, 300));
+                }
+            }
         }
         public void HandleUserInput()
         {
             if (SwinGame.KeyTyped(KeyCode.SpaceKey))
             {
-                _player.Bullet.Add(new Bullet(Player.Location,-30));
+                 _player.Bullet.Add(new Bullet(Player.Location,-30));
             }
         }
         public void FreeResource()

@@ -41,10 +41,7 @@ namespace HotAirBalloonAdventure.src
         {
             
         }
-        public  bool IsAt(Point2D pt)
-        {
-            return SwinGame.BitmapPointCollision(ObjectBitmap(), LocationX, LocationY, pt);
-        }
+       
         public int LifePoint
         {
             get

@@ -38,9 +38,6 @@ namespace HotAirBalloonAdventure.src
             }
            
         }
-        public bool IsAt(GameObject gb)
-        {
-            return SwinGame.BitmapCollision(gb.ObjectBitmap(), gb.Location ,  ObjectBitmap(), Location);
-        }
+        
     }
 }
