@@ -36,7 +36,6 @@ G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\download (1).png
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\bomb2.jpg
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\bullet.png
-G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\HotAirBalloonAdventure.csprojResolveAssemblyReference.cache
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\animations\startup.txt
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\bundles\FileDialog.txt
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\bundles\splash.txt
@@ -77,3 +76,9 @@ C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdvent
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\MyGame.pdb
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\apple.png
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\download.jpg
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\banana.png
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\banana_23-2147496649.jpg
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\download (1).jpg
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\star.png
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\File_Star_full.png
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\Star_full.png

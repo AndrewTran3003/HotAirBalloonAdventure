@@ -134,7 +134,7 @@ namespace HotAirBalloonAdventure.src
 
         public void CreateBadThing()
         {
-            if (_badThing.Count <= 2)
+            if (_badThing.Count <= 1)
             {
                 Random r = new Random();
                 int x = r.Next(3, 7);
@@ -158,14 +158,30 @@ namespace HotAirBalloonAdventure.src
             {
                 Random r = new Random();
                 int x = r.Next(3, 7);
-                int y;
                 Random r2 = new Random();
                 Point2D p1 = new Point2D();
                 for (int i = 0; i < x; i++)
                 {
                     p1.X = r2.Next(-100, -50);
                     p1.Y = r2.Next(100, 500);
-                    _goodThing.Add(new Apple(p1, 300));
+                    int y = r.Next(1,5);
+                    if(y == 2)
+                    {
+                        _goodThing.Add(new Apple(p1, 300));
+                    }
+                    else if(y==1)
+                    {
+                        _goodThing.Add(new Banana(p1, 300));
+                    }
+                    else if(y == 3)
+                    {
+                        _goodThing.Add(new Star(p1, 0));
+                    }
+                    else
+                    {
+                        _goodThing.Add(new BlueBerry(p1, 300));
+                    }
+                    
                 }
             }
         }

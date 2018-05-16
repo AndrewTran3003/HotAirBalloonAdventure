@@ -7,25 +7,25 @@ using SwinGameSDK;
 
 namespace HotAirBalloonAdventure.src
 {
-    class Apple:GoodThing
+    class Star : GoodThing
     {
-        public float y;
-        public Apple(Point2D pt,int Score):base(pt,Score)
+        float y;
+        public Star(Point2D pt, int Score) : base(pt, Score)
         {
             y = LocationY;
         }
         public override Bitmap ObjectBitmap()
         {
-            return SwinGame.BitmapNamed("Apple");
+            return SwinGame.BitmapNamed("Star");
         }
         public override void Draw()
         {
-            SwinGame.LoadBitmapNamed("Apple", "apple.png");
-            SwinGame.DrawBitmap("Apple", LocationX, LocationY);
+            SwinGame.LoadBitmapNamed("Star", "star.png");
+            SwinGame.DrawBitmap("Star", LocationX, LocationY);
         }
         public override void Interact(GameObject gb)
         {
-           if(IsAt(gb))
+            if (IsAt(gb))
             {
                 if (gb.GetType() == typeof(Apple))
                 {

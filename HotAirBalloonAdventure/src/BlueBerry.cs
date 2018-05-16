@@ -7,25 +7,29 @@ using SwinGameSDK;
 
 namespace HotAirBalloonAdventure.src
 {
-    class Apple:GoodThing
+    class BlueBerry : GoodThing
     {
-        public float y;
-        public Apple(Point2D pt,int Score):base(pt,Score)
+
+        int ax;
+        double yx;
+        public BlueBerry(Point2D pt, int Score) : base(pt, Score)
         {
-            y = LocationY;
+            Random Ran = new Random();
+            ax = Ran.Next(1, 10);
+            yx = Ran.NextDouble();
         }
         public override Bitmap ObjectBitmap()
         {
-            return SwinGame.BitmapNamed("Apple");
+            return SwinGame.BitmapNamed("BlueBerry");
         }
         public override void Draw()
         {
-            SwinGame.LoadBitmapNamed("Apple", "apple.png");
-            SwinGame.DrawBitmap("Apple", LocationX, LocationY);
+            SwinGame.LoadBitmapNamed("BlueBerry", "blueberry.png");
+            SwinGame.DrawBitmap("BlueBerry", LocationX, LocationY);
         }
         public override void Interact(GameObject gb)
         {
-           if(IsAt(gb))
+            if (IsAt(gb))
             {
                 if (gb.GetType() == typeof(Apple))
                 {
@@ -36,9 +40,9 @@ namespace HotAirBalloonAdventure.src
         }
         public override void Move()
         {
-            LocationX += 5;
+            LocationX += ax;
 
-            LocationY = (float)(100 * Math.Sin((Math.PI * LocationX) / 180) + 10) + y;
+            LocationY -= (float)yx;
         }
 
     }

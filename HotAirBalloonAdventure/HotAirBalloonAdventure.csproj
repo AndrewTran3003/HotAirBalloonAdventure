@@ -53,6 +53,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\BadThing.cs" />
+    <Compile Include="src\Banana.cs" />
+    <Compile Include="src\BlueBerry.cs" />
     <Compile Include="src\Bomb.cs" />
     <Compile Include="src\Bullet.cs" />
     <Compile Include="src\Apple.cs" />
@@ -61,6 +63,7 @@
     <Compile Include="src\GameObject.cs" />
     <Compile Include="src\GoodThing.cs" />
     <Compile Include="src\Player.cs" />
+    <Compile Include="src\Star.cs" />
   </ItemGroup>
   <Target Name="CopyLibsToOut">
     <Copy SourceFiles="@(WinLibs)" DestinationFolder="$(OutDir)" />
