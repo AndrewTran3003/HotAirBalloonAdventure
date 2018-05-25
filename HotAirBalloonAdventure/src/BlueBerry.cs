@@ -12,10 +12,9 @@ namespace HotAirBalloonAdventure.src
 
         int ax;
         double yx;
-        public BlueBerry(Point2D pt, int Score) : base(pt, Score)
+        public BlueBerry(Point2D pt, int Score,float XSpeed) : base(pt, Score,XSpeed)
         {
             Random Ran = new Random();
-            ax = Ran.Next(1, 10);
             yx = Ran.NextDouble();
         }
         public override Bitmap ObjectBitmap()
@@ -40,7 +39,7 @@ namespace HotAirBalloonAdventure.src
         }
         public override void Move()
         {
-            LocationX += ax;
+            LocationX += XSpeed;
 
             LocationY -= (float)yx;
         }

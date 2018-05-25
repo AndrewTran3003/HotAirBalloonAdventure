@@ -12,14 +12,19 @@ namespace HotAirBalloonAdventure.src
         private Player _player;
         private List<BadThing> _badThing;
         private List<GoodThing> _goodThing;
+        private Wallpaper wallpaper;
         public GameController()
         {
             _badThing = new List<BadThing>();
             _goodThing = new List<GoodThing>();
             Point2D pt1 = new Point2D();
+            Point2D pt2 = new Point2D();
             pt1.X = 400;
             pt1.Y = 300;
+            pt2.X = 0;
+            pt2.Y = 0;
             Player p1 = new Player(pt1);
+            wallpaper = new Wallpaper(pt2);
             Player = p1;
             CreateBadThing();
             CreateGoodThing();
@@ -37,8 +42,7 @@ namespace HotAirBalloonAdventure.src
         }
         public void LoadResource()
         {
-            SwinGame.LoadBitmapNamed("Wallpaper", "wallpaper.png");
-            SwinGame.DrawBitmap("Wallpaper",0,0);
+            wallpaper.Draw();
             foreach (BadThing bt in _badThing)
             {
                 bt.Draw();
@@ -167,19 +171,19 @@ namespace HotAirBalloonAdventure.src
                     int y = r.Next(1,5);
                     if(y == 2)
                     {
-                        _goodThing.Add(new Apple(p1, 300));
+                        _goodThing.Add(new Apple(p1, 300,r2.Next(2,8)));
                     }
                     else if(y==1)
                     {
-                        _goodThing.Add(new Banana(p1, 300));
+                        _goodThing.Add(new Banana(p1, 300,r2.Next(2, 8)));
                     }
                     else if(y == 3)
                     {
-                        _goodThing.Add(new Star(p1, 0));
+                        _goodThing.Add(new Star(p1, 0, r2.Next(2, 8)));
                     }
                     else
                     {
-                        _goodThing.Add(new BlueBerry(p1, 300));
+                        _goodThing.Add(new BlueBerry(p1, 300, r2.Next(2, 8)));
                     }
                     
                 }
@@ -191,6 +195,12 @@ namespace HotAirBalloonAdventure.src
             {
                  _player.Bullet.Add(new Bullet(Player.Location,-30));
             }
+        }
+
+        public void MoveBackGround()
+        {
+            wallpaper.Move();
+            LoadResource();
         }
         public void FreeResource()
         {

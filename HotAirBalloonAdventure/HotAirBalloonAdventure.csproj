@@ -64,6 +64,7 @@
     <Compile Include="src\GoodThing.cs" />
     <Compile Include="src\Player.cs" />
     <Compile Include="src\Star.cs" />
+    <Compile Include="src\Wallpaper.cs" />
   </ItemGroup>
   <Target Name="CopyLibsToOut">
     <Copy SourceFiles="@(WinLibs)" DestinationFolder="$(OutDir)" />

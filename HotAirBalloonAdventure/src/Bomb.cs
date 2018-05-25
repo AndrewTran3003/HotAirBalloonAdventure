@@ -9,7 +9,7 @@ namespace HotAirBalloonAdventure.src
 {
     class Bomb:BadThing
     {
-        public Bomb(Point2D pt, int Score, int Size):base(pt,Score,Size)
+        public Bomb(Point2D pt, int Score, float XSpeed):base(pt,Score,XSpeed)
         {
 
         }

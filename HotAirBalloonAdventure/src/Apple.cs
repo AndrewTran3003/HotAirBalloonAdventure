@@ -10,7 +10,7 @@ namespace HotAirBalloonAdventure.src
     class Apple:GoodThing
     {
         public float y;
-        public Apple(Point2D pt,int Score):base(pt,Score)
+        public Apple(Point2D pt,int Score, float XSpeed):base(pt,Score,XSpeed)
         {
             y = LocationY;
         }
@@ -36,7 +36,7 @@ namespace HotAirBalloonAdventure.src
         }
         public override void Move()
         {
-            LocationX += 5;
+            LocationX += XSpeed;
 
             LocationY = (float)(100 * Math.Sin((Math.PI * LocationX) / 180) + 10) + y;
         }
