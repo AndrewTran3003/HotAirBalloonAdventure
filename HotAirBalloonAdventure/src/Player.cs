@@ -34,8 +34,8 @@ namespace HotAirBalloonAdventure.src
         }
         public override void Move()
         {
-            LocationX = SwinGame.MouseX()-50;
-            LocationY = SwinGame.MouseY()-50;
+            LocationX = SwinGame.MouseX() - 50 + SwinGame.CameraX();
+            LocationY = SwinGame.MouseY() - 50 + SwinGame.CameraY();
         }
         public override void Interact(GameObject gb)
         {

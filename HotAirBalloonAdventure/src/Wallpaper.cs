@@ -23,26 +23,26 @@ namespace HotAirBalloonAdventure.src
         }
         public override void Move()
         {
-            if (SwinGame.MouseX() >= 900 && LocationX - 1000 > -2560 && LocationX <= 0)
+            if (SwinGame.MouseX() >= 850 && SwinGame.CameraX() <= 1550)
             {
-                LocationX-=10;
+                SwinGame.MoveCameraTo(SwinGame.CameraX() + 10, SwinGame.CameraY());
             }
 
-            if (SwinGame.MouseX() <= 100 && LocationX  > -2560 && LocationX < 0 )
+            if (SwinGame.MouseX() <= 150 && SwinGame.CameraX() >= 20)
             {
-                LocationX+=10;
+                SwinGame.MoveCameraTo(SwinGame.CameraX() - 10, SwinGame.CameraY());
             }
-            if(SwinGame.MouseY() >= 500 && LocationY - 600 > -1440 && LocationY - 600 < 0)
+            if (SwinGame.MouseY() >= 450 && SwinGame.CameraY() <= 830)
             {
-                LocationY -= 10;
+                SwinGame.MoveCameraTo(SwinGame.CameraX(), SwinGame.CameraY() + 10);
             }
-            if (SwinGame.MouseY() <= 100 && LocationY < 0 && LocationY > -1440)
+            if (SwinGame.MouseY() <= 100 && SwinGame.CameraY() >= 20)
             {
-                LocationY += 10;
+                SwinGame.MoveCameraTo(SwinGame.CameraX(), SwinGame.CameraY() - 10);
 
             }
 
-          
+
 
         }
     }
