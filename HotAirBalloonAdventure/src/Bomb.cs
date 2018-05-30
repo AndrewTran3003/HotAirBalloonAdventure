@@ -9,23 +9,19 @@ namespace HotAirBalloonAdventure.src
 {
     class Bomb:BadThing
     {
-        public Bomb(Point2D pt, int Score, int Size):base(pt,Score,Size)
+        public Bomb(Point2D pt, int Score, float XSpeed):base(pt,Score,XSpeed)
         {
 
         }
-
+        public override Bitmap ObjectBitmap()
+        {
+            return SwinGame.BitmapNamed("Bomb");
+        }
         public override void Draw()
         {
-            if(Size == 1)
-            {
-                SwinGame.LoadBitmapNamed("Bomb", "bomb.png");
-                SwinGame.DrawBitmap("Bomb", LocationX, LocationY);
-            }
-            else
-            {
-                SwinGame.LoadBitmapNamed("Bomb2", "bomb2.jpg");
-                SwinGame.DrawBitmap("Bomb2", LocationX, LocationY);
-            }
+            SwinGame.LoadBitmapNamed("Bomb", "bomb.png");
+            SwinGame.DrawBitmap("Bomb", LocationX, LocationY);
+           
         }
         public override void Move()
         {

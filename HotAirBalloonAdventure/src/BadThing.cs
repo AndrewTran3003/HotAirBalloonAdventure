@@ -8,25 +8,16 @@ using System.Threading;
 
 namespace HotAirBalloonAdventure.src
 {
-    abstract class BadThing:GameObject
-    {
-        private int _size;
-        public BadThing(Point2D pt, int Score, int Size):base(pt,Score)
+    abstract class BadThing : GameObject { 
+
+        private float _xSpeed;
+        public BadThing(Point2D pt, int Score, float XSpeed):base(pt,Score)
         {
-            _size = Size;
+       
+            _xSpeed = XSpeed;
         }
         
-        public int Size
-        {
-            get
-            {
-                return _size;
-            }
-            set
-            {
-                _size = value;
-            }
-        }
+       
      
         public void Move(Player p)
         { 

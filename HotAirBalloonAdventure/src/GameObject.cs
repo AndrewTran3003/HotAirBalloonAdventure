@@ -14,7 +14,11 @@ namespace HotAirBalloonAdventure.src
         private bool _isDestroyed;
         public abstract void Draw();
         public abstract void Move();
-        public abstract void Interact(GameObject gb);
+        public virtual void Interact(GameObject gb)
+        {
+
+        }
+        public abstract Bitmap ObjectBitmap();
         public GameObject(Point2D pt, int Score)
         {
             _location = pt;
@@ -75,6 +79,10 @@ namespace HotAirBalloonAdventure.src
             {
                 _isDestroyed = value;
             }
+        }
+        public bool IsAt(GameObject gb)
+        {
+             return SwinGame.BitmapCollision(gb.ObjectBitmap(), gb.Location, ObjectBitmap(), Location);
         }
 
 

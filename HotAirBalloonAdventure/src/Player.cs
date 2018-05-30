@@ -19,7 +19,7 @@ namespace HotAirBalloonAdventure.src
             _shield = 0;
             _bullet = new List<Bullet>();
         }
-        public Bitmap PlayerBitmap()
+        public override Bitmap ObjectBitmap()
         {
             return SwinGame.BitmapNamed("Player");
         }
@@ -34,17 +34,14 @@ namespace HotAirBalloonAdventure.src
         }
         public override void Move()
         {
-            LocationX = SwinGame.MouseX();
-            LocationY = SwinGame.MouseY();
+            LocationX = SwinGame.MouseX() - 50 + SwinGame.CameraX();
+            LocationY = SwinGame.MouseY() - 50 + SwinGame.CameraY();
         }
         public override void Interact(GameObject gb)
         {
             
         }
-        public  bool IsAt(Point2D pt)
-        {
-            return SwinGame.BitmapPointCollision(PlayerBitmap(), LocationX, LocationY, pt);
-        }
+       
         public int LifePoint
         {
             get

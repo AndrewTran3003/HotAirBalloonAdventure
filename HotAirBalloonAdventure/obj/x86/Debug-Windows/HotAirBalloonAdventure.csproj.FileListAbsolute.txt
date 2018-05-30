@@ -1,20 +1,68 @@
-G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\HotAirBalloonAdventure.csproj.CoreCompileInputs.cache
-G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\MyGame.exe
-G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\MyGame.pdb
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\animations\startup.txt
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\bundles\FileDialog.txt
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\bundles\splash.txt
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\fonts\arial.ttf
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\fonts\cour.ttf
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\fonts\maven_pro_regular.ttf
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\60305800-blueberry-flat-design.jpg
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\blueberry.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\bomb.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\bomb2.jpg
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\bullet.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\dagger.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\download (1).png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\download.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\fdFile.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\fdFolder.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\FileDialog_Active.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\FileDialog_Background.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\FileDialog_Inactive.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\FileDialog_ScrollSmall.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\hot-air-balloon.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\kisspng-hot-air-balloon-drawing-clip-art-cartoon-balloon-images-5a85faa541f5a1.01885479151872989.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\ripe-blueberry-icon-flat-berries-260nw-547228225.jpg
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\Swinburne.jpg
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\SwinGameAni.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\wallpaper.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\panels\FileDialog.txt
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\sounds\error.wav
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\sounds\SwinGameStart.wav
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\SwinGame.icns
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\SwinGame.ico
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\MyGame.exe
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\MyGame.pdb
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\SwinGame.dll
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\HotAirBalloonAdventure.csprojResolveAssemblyReference.cache
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\HotAirBalloonAdventure.csproj.CoreCompileInputs.cache
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\MyGame.exe
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\MyGame.pdb
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\animations\startup.txt
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\bundles\FileDialog.txt
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\bundles\splash.txt
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\fonts\arial.ttf
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\fonts\cour.ttf
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\fonts\maven_pro_regular.ttf
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\60305800-blueberry-flat-design.jpg
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\apple.png
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\banana.png
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\blueberry.png
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\bomb.png
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\bomb2.jpg
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\bullet.png
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\dagger.png
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\download (1).jpg
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\fdFile.png
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\fdFolder.png
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\FileDialog_Active.png
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\FileDialog_Background.png
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\FileDialog_Inactive.png
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\FileDialog_ScrollSmall.png
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\hot-air-balloon.png
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\ripe-blueberry-icon-flat-berries-260nw-547228225.jpg
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\star.png
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\Swinburne.jpg
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\SwinGameAni.png
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\wallpaper.png
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\panels\FileDialog.txt
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\sounds\error.wav
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\sounds\SwinGameStart.wav
@@ -23,17 +71,8 @@ G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\MyGame.exe
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\MyGame.pdb
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\SwinGame.dll
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\HotAirBalloonAdventure.csproj.CoreCompileInputs.cache
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\HotAirBalloonAdventure.csproj.CopyComplete
-G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\hot-air-balloon.png
-G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\kisspng-hot-air-balloon-drawing-clip-art-cartoon-balloon-images-5a85faa541f5a1.01885479151872989.png
-G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\wallpaper.png
-G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\60305800-blueberry-flat-design.jpg
-G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\blueberry.png
-G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\ripe-blueberry-icon-flat-berries-260nw-547228225.jpg
-G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\bomb.png
-G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\download.png
-G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\dagger.png
-G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\download (1).png
-G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\bomb2.jpg
-G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\bullet.png
-G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\HotAirBalloonAdventure.csprojResolveAssemblyReference.cache
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\MyGame.exe
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\MyGame.pdb
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\GameBar.png

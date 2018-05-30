@@ -13,7 +13,7 @@ namespace HotAirBalloonAdventure.src
            
         }
 
-        public Bitmap BulletBitmap()
+        public override Bitmap ObjectBitmap()
         {
             return SwinGame.BitmapNamed("Bullet");
         }
@@ -28,7 +28,7 @@ namespace HotAirBalloonAdventure.src
         }
         public override void Interact(GameObject gb)
         {
-            if (IsAt(gb.Location))
+            if (IsAt(gb))
             {
                 if (gb.GetType() == typeof(Bomb))
                 {
@@ -38,9 +38,6 @@ namespace HotAirBalloonAdventure.src
             }
            
         }
-        public bool IsAt(Point2D pt)
-        {
-            return SwinGame.BitmapPointCollision(BulletBitmap(), LocationX, LocationY, pt);
-        }
+        
     }
 }
