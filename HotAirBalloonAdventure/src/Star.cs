@@ -10,7 +10,7 @@ namespace HotAirBalloonAdventure.src
     class Star : GoodThing
     {
         float y;
-        public Star(Point2D pt, int Score, float XSpeed) : base(pt, Score,XSpeed)
+        public Star(Point2D pt, float XSpeed) : base(pt,0,XSpeed)
         {
             y = LocationY;
         }

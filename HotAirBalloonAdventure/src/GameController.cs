@@ -140,6 +140,10 @@ namespace HotAirBalloonAdventure.src
                     b.Interact(bomb);
                 }
             }
+            foreach (GoodThing g in _goodThing)
+            {
+                _player.Interact(g);
+            }
         }
 
 
@@ -186,7 +190,7 @@ namespace HotAirBalloonAdventure.src
                     }
                     else if(y == 3)
                     {
-                        _goodThing.Add(new Star(p1, 0, r2.Next(2, 5)));
+                        _goodThing.Add(new Star(p1, r2.Next(2, 5)));
                     }
                     else
                     {
@@ -200,7 +204,8 @@ namespace HotAirBalloonAdventure.src
         {
             if (SwinGame.KeyTyped(KeyCode.SpaceKey))
             {
-                 _player.Bullet.Add(new Bullet(Player.Location,-30));
+                 _player.Bullet.Add(new Bullet(Player.Location));
+                _player.Score -= 30;
             }
         }
 

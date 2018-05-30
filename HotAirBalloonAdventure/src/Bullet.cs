@@ -8,7 +8,7 @@ namespace HotAirBalloonAdventure.src
 {
     class Bullet:GameObject
     {
-        public Bullet(Point2D pt, int Score):base(pt,Score)
+        public Bullet(Point2D pt):base(pt,0)
         {
            
         }
