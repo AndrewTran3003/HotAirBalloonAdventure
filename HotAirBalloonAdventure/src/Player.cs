@@ -39,7 +39,25 @@ namespace HotAirBalloonAdventure.src
         }
         public override void Interact(GameObject gb)
         {
-            
+            if (IsAt(gb))
+            {
+                if (gb.GetType() == typeof(Apple))
+                {
+                    gb.IsDestroyed = true;
+                    Score += gb.Score;
+                }
+                if (gb.GetType() == typeof(Banana))
+                {
+                    gb.IsDestroyed = true;
+                    Score += gb.Score;
+                }
+                if (gb.GetType() == typeof(Star))
+                {
+                    gb.IsDestroyed = true;
+                    Shield ++;
+                }
+            }
+
         }
        
         public int LifePoint

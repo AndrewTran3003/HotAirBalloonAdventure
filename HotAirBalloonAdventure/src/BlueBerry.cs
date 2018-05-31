@@ -10,7 +10,6 @@ namespace HotAirBalloonAdventure.src
     class BlueBerry : GoodThing
     {
 
-        int ax;
         double yx;
         public BlueBerry(Point2D pt, int Score,float XSpeed) : base(pt, Score,XSpeed)
         {

@@ -10,8 +10,6 @@ C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdvent
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\bomb2.jpg
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\bullet.png
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\dagger.png
-C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\download (1).png
-C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\download.png
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\fdFile.png
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\fdFolder.png
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\FileDialog_Active.png
@@ -19,7 +17,6 @@ C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdvent
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\FileDialog_Inactive.png
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\FileDialog_ScrollSmall.png
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\hot-air-balloon.png
-C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\kisspng-hot-air-balloon-drawing-clip-art-cartoon-balloon-images-5a85faa541f5a1.01885479151872989.png
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\ripe-blueberry-icon-flat-berries-260nw-547228225.jpg
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\Swinburne.jpg
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\SwinGameAni.png
@@ -32,7 +29,6 @@ C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdvent
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\MyGame.exe
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\MyGame.pdb
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\SwinGame.dll
-C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\HotAirBalloonAdventure.csprojResolveAssemblyReference.cache
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\HotAirBalloonAdventure.csproj.CoreCompileInputs.cache
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\MyGame.exe
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\MyGame.pdb
@@ -76,3 +72,10 @@ G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\MyGame.exe
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\MyGame.pdb
 G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\GameBar.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\apple.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\banana.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\download (1).jpg
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\GameBar.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\star.png
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\Mountain.jpg
+C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\HotAirBalloonAdventure.csprojResolveAssemblyReference.cache
