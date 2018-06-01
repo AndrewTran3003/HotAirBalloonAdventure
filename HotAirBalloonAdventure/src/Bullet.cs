@@ -8,9 +8,10 @@ namespace HotAirBalloonAdventure.src
 {
     class Bullet:GameObject
     {
-        public Bullet(Point2D pt):base(pt,0)
+        Player _player; 
+        public Bullet(Point2D pt, Player p):base(pt,0)
         {
-           
+            _player = p;
         }
 
         public override Bitmap ObjectBitmap()
@@ -30,11 +31,33 @@ namespace HotAirBalloonAdventure.src
         {
             if (IsAt(gb))
             {
-                if (gb.GetType() == typeof(Bomb))
+                if (gb.GetType().BaseType == typeof(GoodThing))
+                {
+                    gb.IsDestroyed = true;
+                    IsDestroyed = true;
+                    if(_player.Score == 0)
+                    {
+                        if (_player.Shield == 0)
+                        {
+                            _player.LifePoint--;
+                        }
+                        else
+                        {
+                            _player.Shield--;
+                        }
+                    }
+                    else
+                    {
+                        _player.Score -= gb.Score; 
+                    }
+                }
+
+                if (gb.GetType().BaseType == typeof(BadThing))
                 {
                     gb.IsDestroyed = true;
                     IsDestroyed = true;
                 }
+
             }
            
         }

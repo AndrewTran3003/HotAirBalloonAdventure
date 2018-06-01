@@ -10,11 +10,11 @@ namespace HotAirBalloonAdventure.src
     class Banana : GoodThing
     {
  
-        double yx;
+        private double _ySpeed;
         public Banana(Point2D pt, int Score, float XSpeed) : base(pt, Score,XSpeed)
         {
             Random Ran = new Random();
-            yx = Ran.NextDouble();
+            _ySpeed = Ran.NextDouble();
         }
         public override Bitmap ObjectBitmap()
         {
@@ -40,7 +40,7 @@ namespace HotAirBalloonAdventure.src
         {
             LocationX += XSpeed;
 
-            LocationY -= (float)yx;
+            LocationY -= (float)_ySpeed;
         }
 
     }

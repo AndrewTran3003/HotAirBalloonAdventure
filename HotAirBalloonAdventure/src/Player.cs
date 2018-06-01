@@ -41,20 +41,56 @@ namespace HotAirBalloonAdventure.src
         {
             if (IsAt(gb))
             {
-                if (gb.GetType() == typeof(Apple))
+                if (gb.GetType() == typeof(Apple)||
+                    gb.GetType() == typeof(Banana)||
+                    gb.GetType() == typeof(BlueBerry))
                 {
                     gb.IsDestroyed = true;
                     Score += gb.Score;
                 }
-                if (gb.GetType() == typeof(Banana))
-                {
-                    gb.IsDestroyed = true;
-                    Score += gb.Score;
-                }
+                 
                 if (gb.GetType() == typeof(Star))
                 {
                     gb.IsDestroyed = true;
                     Shield ++;
+                }
+                if (gb.GetType() == typeof(Heart))
+                {
+                    gb.IsDestroyed = true;
+                    LifePoint++;
+                }
+
+                if (gb.GetType() == typeof(Bomb))
+                {
+                    gb.IsDestroyed = true;
+                    if (Shield == 0)
+                    {
+                        LifePoint--;
+                    }
+                    else
+                    {
+                        Shield--;
+                    }
+                }
+
+                if (gb.GetType() == typeof(Dagger))
+                {
+                    gb.IsDestroyed = true;
+                    if (Score <= 0)
+                    {
+                        if(Shield == 0)
+                        {
+                            LifePoint--;
+                        }
+                        else
+                        {
+                            Shield--;
+                        }
+                    }
+                    else
+                    {
+                        Score += gb.Score;
+                    }
                 }
             }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using SwinGameSDK;
 
 namespace HotAirBalloonAdventure.src
@@ -27,7 +28,10 @@ namespace HotAirBalloonAdventure.src
                 game1.ProcessMovement();
                 game1.CheckCollision();
                 game1.DeleteThing();
-
+                if (game1.GameOver == true)
+                {
+                    break;
+                }
                 SwinGame.ProcessEvents();
 
                 SwinGame.RefreshScreen(60);
@@ -35,6 +39,8 @@ namespace HotAirBalloonAdventure.src
              
 
             }
+            game1.DisplayGameOver();
+            Thread.Sleep(1000);
             game1.FreeResource();
         }
     }

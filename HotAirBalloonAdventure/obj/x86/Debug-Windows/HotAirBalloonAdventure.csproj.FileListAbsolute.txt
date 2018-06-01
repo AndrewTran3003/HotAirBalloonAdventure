@@ -79,3 +79,9 @@ C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdvent
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\star.png
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\Mountain.jpg
 C:\Users\spring.ROll\Documents\GitHub\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\HotAirBalloonAdventure.csprojResolveAssemblyReference.cache
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\Mountain.jpg
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\obj\x86\Debug-Windows\HotAirBalloonAdventure.csprojResolveAssemblyReference.cache
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\download.jpg
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\images\heart.png
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\sounds\slap.wav
+G:\Tiger White\swinburne\Year 2\Sem1\Object oriented programming\Custom Program\HotAirBalloonAdventure\HotAirBalloonAdventure\bin\Debug\Resources\sounds\Slurp+5.wav

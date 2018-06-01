@@ -9,10 +9,10 @@ namespace HotAirBalloonAdventure.src
 {
     class Apple:GoodThing
     {
-        public float y;
+        private float _yLocTemp;
         public Apple(Point2D pt,int Score, float XSpeed):base(pt,Score,XSpeed)
         {
-            y = LocationY;
+            _yLocTemp = LocationY;
         }
         public override Bitmap ObjectBitmap()
         {
@@ -38,7 +38,7 @@ namespace HotAirBalloonAdventure.src
         {
             LocationX += XSpeed;
 
-            LocationY = (float)(100 * Math.Sin((Math.PI * LocationX) / 180) + 10) + y;
+            LocationY = (float)(100 * Math.Sin((Math.PI * LocationX) / 180) + 10) + _yLocTemp;
         }
 
     }

@@ -12,8 +12,8 @@ namespace HotAirBalloonAdventure.src
         private Player _player;
         private List<BadThing> _badThing;
         private List<GoodThing> _goodThing;
-        private Wallpaper wallpaper;
-        private GameBar gamebar;
+        private Wallpaper _wallpaper;
+        private GameBar _gamebar;
         public GameController()
         {
             _badThing = new List<BadThing>();
@@ -28,25 +28,15 @@ namespace HotAirBalloonAdventure.src
             pt3.X = 0;
             pt3.Y = 500;
             Player p1 = new Player(pt1);
-            wallpaper = new Wallpaper(pt2);
-            gamebar = new GameBar(pt3,p1);
-            Player = p1;
+            _wallpaper = new Wallpaper(pt2);
+            _gamebar = new GameBar(pt3,p1);
+            _player = p1;
           
         }
-        public Player Player
-        {
-            get
-            {
-                return _player;
-            }
-            set
-            {
-                _player = value;
-            }
-        }
+        
         public void LoadResource()
         {
-            wallpaper.Draw();
+            _wallpaper.Draw();
             foreach (BadThing bt in _badThing)
             {
                 bt.Draw();
@@ -64,7 +54,7 @@ namespace HotAirBalloonAdventure.src
             {
                 gt.Draw();
             }
-            gamebar.Draw();
+            _gamebar.Draw();
             
         }
         public void ProcessMovement()
@@ -72,7 +62,7 @@ namespace HotAirBalloonAdventure.src
             _player.Move();
             foreach(BadThing bt in _badThing)
             {
-                bt.Move(_player);
+                bt.Move();
             }
 
             if(_player.Bullet.Count > 0)
@@ -90,8 +80,8 @@ namespace HotAirBalloonAdventure.src
             {
                 gt.Move();
             }
-            wallpaper.Move();
-            gamebar.Move();
+            _wallpaper.Move();
+            _gamebar.Move();
         }
         public void DeleteThing()
         {
@@ -135,15 +125,38 @@ namespace HotAirBalloonAdventure.src
         {
             foreach(Bullet b in _player.Bullet)
             {
-                foreach (Bomb bomb in _badThing)
+                foreach (BadThing bt in _badThing)
                 {
-                    b.Interact(bomb);
+                    b.Interact(bt);
                 }
             }
-            foreach (GoodThing g in _goodThing)
+
+
+            foreach (Bullet b in _player.Bullet)
             {
-                _player.Interact(g);
+                foreach (GoodThing gt in _goodThing)
+                {
+                    b.Interact(gt);
+                }
             }
+            foreach (GoodThing gt in _goodThing)
+            {
+                _player.Interact(gt);
+            }
+            foreach (BadThing bt in _badThing)
+            {
+                _player.Interact(bt);
+            }
+            foreach (GoodThing gt in _goodThing)
+            {
+                foreach (BadThing bt in _badThing)
+                {
+                    bt.Interact(gt);
+                }
+            }
+
+            
+
         }
 
 
@@ -158,10 +171,21 @@ namespace HotAirBalloonAdventure.src
                 Point2D p1 = new Point2D();
                 for (int i = 0; i < x; i++)
                 {
+                    int z = r.Next(1, 5);
                     y = r.Next(1, 5);
                     p1.X = r2.Next(-100, 2660);
                     p1.Y = r2.Next(-100, 0);
-                    _badThing.Add(new Bomb(p1, -300, y));
+                    if(z == 1)
+                    {
+                        _badThing.Add(new Bomb(p1, y,_player));
+
+                    }
+                    else
+                    {
+                        _badThing.Add(new Dagger(p1, -300, y,_player));
+                    }
+
+                    
                 }
             }
             
@@ -179,12 +203,12 @@ namespace HotAirBalloonAdventure.src
                 {
                     p1.X = r2.Next(-100, -50);
                     p1.Y = r2.Next(100, 1440);
-                    int y = r.Next(1,5);
+                    int y = r.Next(1,20);
                     if(y == 2)
                     {
-                        _goodThing.Add(new Apple(p1, 300,r2.Next(2,5)));
+                        _goodThing.Add(new Apple(p1, 100,r2.Next(2,5)));
                     }
-                    else if(y==1)
+                    else if( y == 1 )
                     {
                         _goodThing.Add(new Banana(p1, 300,r2.Next(2, 5)));
                     }
@@ -192,9 +216,15 @@ namespace HotAirBalloonAdventure.src
                     {
                         _goodThing.Add(new Star(p1, r2.Next(2, 5)));
                     }
+                    else if (y == 4)
+                    {
+                        _goodThing.Add(new Heart(p1, 0, r2.Next(2,5), r2.Next(2, 5)));
+                        
+                    }
                     else
                     {
-                        _goodThing.Add(new BlueBerry(p1, 300, r2.Next(2, 5)));
+
+                        _goodThing.Add(new BlueBerry(p1, 15, r2.Next(2, 5)));
                     }
                     
                 }
@@ -204,11 +234,44 @@ namespace HotAirBalloonAdventure.src
         {
             if (SwinGame.KeyTyped(KeyCode.SpaceKey))
             {
-                 _player.Bullet.Add(new Bullet(Player.Location));
-                _player.Score -= 30;
+                if(_player.Score >= 100)
+                {
+                    _player.Bullet.Add(new Bullet(_player.Location, _player));
+                }
+                
+                
+                
+            }
+        }
+        public bool GameOver
+        {
+            get
+            {
+                if (_player.LifePoint == 0 || SwinGame.WindowCloseRequested() == true)
+                {
+                    return true;
+                }
+                return false;
             }
         }
 
+        public void DisplayGameOver()
+        {
+            string displayText;
+            SwinGame.ClearScreen(Color.Black);
+            if (_player.LifePoint != 0)
+            {
+                displayText = "Game Over! Your score is: " + _player.Score;
+                
+            }
+            else
+            {
+                displayText = "Game Over! You lose all your life point ";
+            }
+            SwinGame.DrawText(displayText, Color.White, 300 + SwinGame.CameraX(), 300 + SwinGame.CameraY());
+            SwinGame.RefreshScreen();
+            
+        }
       
         public void FreeResource()
         {
@@ -226,7 +289,7 @@ namespace HotAirBalloonAdventure.src
             {
                 SwinGame.FreeBitmap(b.ObjectBitmap());
             }
-            SwinGame.FreeBitmap(wallpaper.ObjectBitmap());
+            SwinGame.FreeBitmap(_wallpaper.ObjectBitmap());
         }
     }
 }

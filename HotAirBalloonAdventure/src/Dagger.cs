@@ -7,33 +7,36 @@ using SwinGameSDK;
 
 namespace HotAirBalloonAdventure.src
 {
-    class Bomb:BadThing
+    class Dagger : BadThing
     {
-        public Bomb(Point2D pt, float XSpeed, Player p):base(pt,0,XSpeed,p)
+        public Dagger(Point2D pt, int Score, float XSpeed,Player p) : base(pt, Score, XSpeed,p)
         {
             player = p;
         }
         public override Bitmap ObjectBitmap()
         {
-            return SwinGame.BitmapNamed("Bomb");
+            return SwinGame.BitmapNamed("Dagger");
         }
         public override void Draw()
         {
-            SwinGame.LoadBitmapNamed("Bomb", "bomb.png");
-            SwinGame.DrawBitmap("Bomb", LocationX, LocationY);
-           
+            SwinGame.LoadBitmapNamed("Dagger", "dagger.png");
+            SwinGame.DrawBitmap("Dagger", LocationX, LocationY);
+
         }
-        
+     
         public override void Interact(GameObject gb)
         {
             if (IsAt(gb))
             {
-                if (gb.GetType().BaseType == typeof(GoodThing))
+                if (gb.GetType() == typeof(Apple) || 
+                    gb.GetType()== typeof(Banana)||
+                    gb.GetType() == typeof(BlueBerry)||
+                    gb.GetType() == typeof(Heart))
                 {
                     gb.IsDestroyed = true;
                 }
-                
-                
+
+
             }
         }
     }

@@ -9,10 +9,10 @@ namespace HotAirBalloonAdventure.src
 {
     class Star : GoodThing
     {
-        float y;
+        private float _yLocTemp;
         public Star(Point2D pt, float XSpeed) : base(pt,0,XSpeed)
         {
-            y = LocationY;
+            _yLocTemp = LocationY;
         }
         public override Bitmap ObjectBitmap()
         {
@@ -27,10 +27,10 @@ namespace HotAirBalloonAdventure.src
         {
             if (IsAt(gb))
             {
-                if (gb.GetType() == typeof(Apple))
+                if (gb.GetType() == typeof(Dagger))
                 {
-                    LocationX = gb.LocationY;
-                    LocationY = gb.LocationX;
+                    gb.IsDestroyed = true;
+                    IsDestroyed = true;
                 }
             }
         }
@@ -38,7 +38,7 @@ namespace HotAirBalloonAdventure.src
         {
             LocationX += XSpeed;
 
-            LocationY = (float)(100 * Math.Sin((Math.PI * LocationX) / 180) + 10) + y;
+            LocationY = (float)(100 * Math.Sin((Math.PI * LocationX) / 180) + 10) + _yLocTemp;
         }
 
     }
